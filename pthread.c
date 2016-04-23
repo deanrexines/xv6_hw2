@@ -7,6 +7,7 @@
 
 // Implement your pthreads library here.
 
+<<<<<<< HEAD
  int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void * (*start_routine) (void *), void *arg) {
     void *stack = malloc(4096);
     thread->pid = clone(start_routine, arg, stack);
@@ -50,3 +51,5 @@ int pthread_mutex_lock(pthread_mutex_t *mutex) {
 int pthread_mutex_unlock(pthread_mutex_t *mutex) {
     return mutex_unlock(mutex->id);
 }
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6

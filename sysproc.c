@@ -102,6 +102,7 @@ sys_halt(void)
     outw(0xB004, 0x2000);
   return 0;
 }
+<<<<<<< HEAD
 
 int 
 sys_clone(void)
@@ -182,3 +183,5 @@ int sys_mutex_unlock(void) {
     }
     return mutex_unlock(id);
 }
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6

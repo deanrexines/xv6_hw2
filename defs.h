@@ -118,6 +118,7 @@ void            userinit(void);
 int             wait(void);
 void            wakeup(void*);
 void            yield(void);
+<<<<<<< HEAD
 int             clone(void *(*func) (void *), void *arg, void *stack);
 int             join(int pid, void **stack, void **retval);
 void            texit(void *retval);
@@ -125,6 +126,8 @@ int             mutex_init(void);
 int             mutex_destroy(int mutex_id);
 int             mutex_lock(int mutex_id);
 int             mutex_unlock(int mutex_id);
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 
 // swtch.S
 void            swtch(struct context**, struct context*);

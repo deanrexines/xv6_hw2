@@ -21,6 +21,7 @@
 #define SYS_mkdir  20
 #define SYS_close  21
 #define SYS_halt   22
+<<<<<<< HEAD
 #define SYS_clone  23
 #define SYS_join   24
 #define SYS_texit  25
@@ -28,3 +29,5 @@
 #define SYS_mutex_destroy 27
 #define SYS_mutex_lock    28
 #define SYS_mutex_unlock  29
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6

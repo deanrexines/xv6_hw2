@@ -4,6 +4,7 @@
 // Define all functions and types for pthreads here.
 // This can be included in both kernel and user code.
 
+<<<<<<< HEAD
 //struct for pthread 
 typedef struct {
     int pid;
@@ -34,4 +35,6 @@ int pthread_mutex_destroy(pthread_mutex_t *mutex);
 int pthread_mutex_lock(pthread_mutex_t *mutex);
 int pthread_mutex_unlock(pthread_mutex_t *mutex);
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 #endif

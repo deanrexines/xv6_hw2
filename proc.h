@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #include "spinlock.h"
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 // Segments in proc->gdt.
 #define NSEGS     7
 
@@ -18,6 +21,7 @@ struct cpu {
   struct proc *proc;           // The currently-running process.
 };
 
+<<<<<<< HEAD
 //ADT for mutex
 struct mutex {
   //locked or not
@@ -28,6 +32,8 @@ struct mutex {
     void *owner;
 };
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 extern struct cpu cpus[NCPU];
 extern int ncpu;
 
@@ -78,9 +84,12 @@ struct proc {
   struct file *ofile[NOFILE];  // Open files
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
+<<<<<<< HEAD
   int haveKids;                // If process is a clone
   struct spinlock mtablelock;  // Lock for mutex table
   struct mutex mtable[32];     // Table of mutexes that may be available for process(es)
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 };
 
 // Process memory is laid out contiguously, low addresses first:

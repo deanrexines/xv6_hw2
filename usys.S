@@ -30,6 +30,7 @@ SYSCALL(sbrk)
 SYSCALL(sleep)
 SYSCALL(uptime)
 SYSCALL(halt)
+<<<<<<< HEAD
 SYSCALL(clone)
 SYSCALL(join)
 SYSCALL(texit)
@@ -37,3 +38,5 @@ SYSCALL(mutex_init)
 SYSCALL(mutex_destroy)
 SYSCALL(mutex_lock)
 SYSCALL(mutex_unlock)
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6

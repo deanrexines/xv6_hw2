@@ -99,6 +99,7 @@ extern int sys_wait(void);
 extern int sys_write(void);
 extern int sys_uptime(void);
 extern int sys_halt(void);
+<<<<<<< HEAD
 extern int sys_clone(void);
 extern int sys_join(void);
 extern int sys_texit(void);
@@ -106,6 +107,8 @@ extern int sys_mutex_init(void);
 extern int sys_mutex_destroy(void);
 extern int sys_mutex_lock(void);
 extern int sys_mutex_unlock(void);
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,
@@ -130,6 +133,7 @@ static int (*syscalls[])(void) = {
 [SYS_mkdir]   sys_mkdir,
 [SYS_close]   sys_close,
 [SYS_halt]    sys_halt,
+<<<<<<< HEAD
 [SYS_clone]   sys_clone,
 [SYS_join]   sys_join,
 [SYS_texit]   sys_texit,
@@ -137,6 +141,8 @@ static int (*syscalls[])(void) = {
 [SYS_mutex_destroy] sys_mutex_destroy,
 [SYS_mutex_lock] sys_mutex_lock,
 [SYS_mutex_unlock] sys_mutex_unlock
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 };
 
 void

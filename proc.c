@@ -20,6 +20,7 @@ extern void trapret(void);
 
 static void wakeup1(void *chan);
 
+<<<<<<< HEAD
 //mutex-related section
 struct proc* mutex_parent() {
     struct proc *p = proc;
@@ -123,6 +124,8 @@ int mutex_unlock(int mutex_id) {
     return 0;
 }
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 void
 pinit(void)
 {
@@ -261,8 +264,11 @@ fork(void)
  
   pid = np->pid;
 
+<<<<<<< HEAD
   initlock(&np->mtablelock, np->name);
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
   // lock to force the compiler to emit the np->state write last.
   acquire(&ptable.lock);
   np->state = RUNNABLE;
@@ -304,6 +310,7 @@ exit(void)
   // Pass abandoned children to init.
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
     if(p->parent == proc){
+<<<<<<< HEAD
       //p->parent = initproc;
       //if(p->state == ZOMBIE)
         //wakeup1(initproc);
@@ -317,6 +324,11 @@ exit(void)
           if(p->state == ZOMBIE)
             wakeup1(initproc);
       }
+=======
+      p->parent = initproc;
+      if(p->state == ZOMBIE)
+        wakeup1(initproc);
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
     }
   }
 
@@ -542,6 +554,7 @@ kill(int pid)
   return -1;
 }
 
+<<<<<<< HEAD
 //clone (kernel thread)
  int
  clone(void (*func)(void *), void *arg, void *stack)
@@ -672,6 +685,8 @@ kill(int pid)
     exit();
  }
 
+=======
+>>>>>>> b04c5f7e1c59edb4a25bffb7228e601f6651b0b6
 //PAGEBREAK: 36
 // Print a process listing to console.  For debugging.
 // Runs when user types ^P on console.
